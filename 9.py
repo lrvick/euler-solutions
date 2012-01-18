@@ -10,7 +10,8 @@
 
 import itertools
 
-for a,b,c in itertools.combinations(range(1000),3):
-    if a+b+c == 1000 and a**2 + b**2 == c**2:
+for a,b in itertools.combinations(range(1000),2):
+    c = 1000-a-b
+    if a < b < c and a+b+c == 1000 and a**2 + b**2 == c**2:
         print a*b*c
         break
