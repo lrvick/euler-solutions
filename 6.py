@@ -13,6 +13,6 @@
 
 s = 0
 for x in xrange(101):
-    s += x*x*x
-    s -= x*x
+    s += x**3
+    s -= x**2
 print s
